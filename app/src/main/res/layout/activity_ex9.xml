@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".Ex9">
+
+    <TextView
+        android:id="@+id/now_playing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now Playing: "
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/now_playing"
+        android:layout_toRightOf="@+id/now_playing"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/player_image"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@+id/now_playing"
+        android:layout_above="@+id/start_time"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="20dp"
+        android:src="@android:drawable/ic_media_rew" />
+
+    <ImageButton
+        android:id="@+id/buttonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/backButton"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/backButton"
+        android:src="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/buttonPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonPlay"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/buttonPlay"
+        android:src="@android:drawable/ic_media_pause" />
+
+    <ImageButton
+        android:id="@+id/buttonForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonPause"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/buttonPause"
+        android:contentDescription="@+id/imageButton3"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <TextView
+        android:id="@+id/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seekbar"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        android:text="0 min, 0 sec" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backButton"
+        android:layout_toLeftOf="@+id/song_time"
+        android:layout_toRightOf="@+id/start_time" />
+
+    <TextView
+        android:id="@+id/song_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/buttonForward"
+        android:layout_alignTop="@+id/seekbar"
+        android:text="0 min, 0 sec" />
+
+
+</RelativeLayout>

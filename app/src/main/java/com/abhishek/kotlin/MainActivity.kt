@@ -22,6 +22,9 @@ class MainActivity : AppCompatActivity() {
         var textView8:TextView = findViewById(R.id.ex8)
         var textView9:TextView = findViewById(R.id.ex9)
         var textView10:TextView = findViewById(R.id.ex10)
+        var textView11:TextView = findViewById(R.id.ex11)
+        var textView12:TextView = findViewById(R.id.ex12)
+        var textView13:TextView = findViewById(R.id.ex13)
 
         textView1.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, Ex1::class.java)
@@ -72,6 +75,22 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Ex10::class.java)
             startActivity(intent)
         })
+
+        textView11.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, Ex11::class.java)
+            startActivity(intent)
+        })
+
+        textView12.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, Ex12::class.java)
+            startActivity(intent)
+        })
+
+        textView13.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, Ex13::class.java)
+            startActivity(intent)
+        })
+
 
 
 

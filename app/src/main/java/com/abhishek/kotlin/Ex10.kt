@@ -36,12 +36,14 @@ class Ex10 : AppCompatActivity() {
                 var smsManager: SmsManager
                 if (Build.VERSION.SDK_INT >= 23) {
 
-                    smsManager = this.getSystemService(SmsManager::class.java)
+                    smsManager = applicationContext.getSystemService(SmsManager::class.java)
+//                    smsManager = SmsManager.getDefault()
                 } else {
 
                     smsManager = SmsManager.getDefault()
                 }
 
+                smsManager = applicationContext.getSystemService(SmsManager::class.java)
                 smsManager.sendTextMessage(phoneNumber, null, message, null, null)
                 Toast.makeText(applicationContext, "Message Sent", Toast.LENGTH_LONG).show()
 

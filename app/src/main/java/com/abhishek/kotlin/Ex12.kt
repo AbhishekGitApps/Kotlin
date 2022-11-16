@@ -16,9 +16,9 @@ class Ex12 : AppCompatActivity() {
         setContentView(R.layout.activity_ex12)
 
         val databaseHandler: DatabaseHandler= DatabaseHandler(this)
-        val status = databaseHandler.addEmployee(ModelClass(Integer.parseInt("1"),"Abhishek", "abhishek@gmail.com"))
-        val status1 = databaseHandler.addEmployee(ModelClass(Integer.parseInt("2"),"Abhi", "abhi@gmail.com"))
-        val status2 = databaseHandler.addEmployee(ModelClass(Integer.parseInt("3"),"Ab", "ab@gmail.com"))
+        val status = databaseHandler.addEmployee(ModelClass(Integer.parseInt("1"),"Akash", "akash@gmail.com"))
+        val status1 = databaseHandler.addEmployee(ModelClass(Integer.parseInt("2"),"Sakshi", "sakshi@gmail.com"))
+        val status2 = databaseHandler.addEmployee(ModelClass(Integer.parseInt("3"),"Kavita", "kavita@gmail.com"))
 
         val emp: List<ModelClass> = databaseHandler.viewEmployee()
         val empArrayId = Array<String>(emp.size){"0"}

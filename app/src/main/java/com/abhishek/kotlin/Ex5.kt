@@ -8,13 +8,13 @@ import android.widget.EditText
 import android.widget.TextView
 
 class Ex5 : AppCompatActivity() {
-    lateinit var sumButton : Button
-    lateinit var subButton : Button
-    lateinit var mulButton : Button
-    lateinit var divButton : Button
-    lateinit var editText1 : EditText
-    lateinit var editText2 : EditText
-    lateinit var result : TextView
+    lateinit var sumButton: Button
+    lateinit var subButton: Button
+    lateinit var mulButton: Button
+    lateinit var divButton: Button
+    lateinit var editText1: EditText
+    lateinit var editText2: EditText
+    lateinit var result: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ex5)
